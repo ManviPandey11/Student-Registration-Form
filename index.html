@@ -1,130 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Registration Form</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <div class="container">
-    <div class="form-box">
-        <h1>Student Registration Form</h1>
-        <p>Fill in your details below to register.</p>
 
-        <form>
+<div class="card">
 
-            <div class="row">
-                <div class="input-group">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Enter first name" required>
-                </div>
+<div class="title">
+<h1>Student Registration</h1>
+<p>Fill out the form below to register.</p>
+</div>
 
-                <div class="input-group">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Enter last name" required>
-                </div>
-            </div>
+<form>
 
-            <div class="row">
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="example@email.com" required>
-                </div>
+<div class="grid">
 
-                <div class="input-group">
-                    <label>Mobile Number</label>
-                    <input type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
-                </div>
-            </div>
+<div class="input-box">
+<label>First Name</label>
+<div class="input">
+<i class="fa-solid fa-user"></i>
+<input type="text" placeholder="John" required>
+</div>
+</div>
 
-            <div class="input-group">
-                <label>Gender</label>
+<div class="input-box">
+<label>Last Name</label>
+<div class="input">
+<i class="fa-solid fa-user"></i>
+<input type="text" placeholder="Doe" required>
+</div>
+</div>
 
-                <div class="radio-group">
-                    <label><input type="radio" name="gender" required> Male</label>
-                    <label><input type="radio" name="gender"> Female</label>
-                    <label><input type="radio" name="gender"> Other</label>
-                </div>
-            </div>
+<div class="input-box">
+<label>Email</label>
+<div class="input">
+<i class="fa-solid fa-envelope"></i>
+<input type="email" placeholder="john@email.com" required>
+</div>
+</div>
 
-            <div class="input-group">
-                <label>Address</label>
-                <textarea rows="4" placeholder="Enter your address"></textarea>
-            </div>
+<div class="input-box">
+<label>Mobile</label>
+<div class="input">
+<i class="fa-solid fa-phone"></i>
+<input
+type="tel"
+pattern="[0-9]{10}"
+placeholder="9876543210"
+required>
+</div>
+</div>
 
-            <div class="row">
-                <div class="input-group">
-                    <label>City</label>
-                    <input type="text" required>
-                </div>
+<div class="input-box full">
+<label>Address</label>
 
-                <div class="input-group">
-                    <label>State</label>
-                    <input type="text" required>
-                </div>
-            </div>
+<textarea
+rows="4"
+placeholder="Enter your address..."></textarea>
 
-            <div class="row">
-                <div class="input-group">
-                    <label>Country</label>
-                    <input type="text" required>
-                </div>
+</div>
 
-                <div class="input-group">
-                    <label>PIN Code</label>
-                    <input type="text" pattern="[0-9]{6}" placeholder="6-digit PIN" required>
-                </div>
-            </div>
+<div class="input-box">
+<label>City</label>
 
-            <div class="input-group">
-                <label>Hobbies</label>
+<div class="input">
+<i class="fa-solid fa-city"></i>
+<input type="text">
+</div>
 
-                <div class="checkbox-group">
-                    <label><input type="checkbox"> Reading</label>
-                    <label><input type="checkbox"> Music</label>
-                    <label><input type="checkbox"> Sports</label>
-                    <label><input type="checkbox"> Coding</label>
-                </div>
-            </div>
+</div>
 
-            <div class="input-group">
-                <label>Highest Qualification</label>
+<div class="input-box">
+<label>State</label>
 
-                <select required>
-                    <option value="">Select Qualification</option>
-                    <option>High School</option>
-                    <option>Higher Secondary</option>
-                    <option>Bachelor's Degree</option>
-                    <option>Master's Degree</option>
-                    <option>PhD</option>
-                </select>
-            </div>
+<div class="input">
+<i class="fa-solid fa-location-dot"></i>
+<input type="text">
+</div>
 
-            <div class="input-group">
-                <label>Course Applied For</label>
+</div>
 
-                <select required>
-                    <option value="">Select Course</option>
-                    <option>BCA</option>
-                    <option>B.Sc</option>
-                    <option>B.Com</option>
-                    <option>BA</option>
-                    <option>MCA</option>
-                    <option>M.Sc</option>
-                    <option>M.Com</option>
-                    <option>MA</option>
-                </select>
-            </div>
+<div class="input-box">
+<label>Country</label>
 
-            <div class="buttons">
-                <button type="submit">Submit</button>
-                <button type="reset" class="reset">Reset</button>
-            </div>
+<div class="input">
+<i class="fa-solid fa-earth-asia"></i>
+<input type="text">
+</div>
 
-        </form>
-    </div>
+</div>
+
+<div class="input-box">
+<label>PIN Code</label>
+
+<div class="input">
+<i class="fa-solid fa-map-pin"></i>
+<input
+type="text"
+maxlength="6"
+placeholder="400001">
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>Gender</h3>
+
+<div class="options">
+
+<label><input type="radio" name="gender"> Male</label>
+
+<label><input type="radio" name="gender"> Female</label>
+
+<label><input type="radio" name="gender"> Other</label>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>Hobbies</h3>
+
+<div class="options">
+
+<label><input type="checkbox"> Reading</label>
+
+<label><input type="checkbox"> Coding</label>
+
+<label><input type="checkbox"> Music</label>
+
+<label><input type="checkbox"> Sports</label>
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="input-box">
+
+<label>Qualification</label>
+
+<select>
+
+<option>Select</option>
+
+<option>High School</option>
+
+<option>Higher Secondary</option>
+
+<option>Bachelor's Degree</option>
+
+<option>Master's Degree</option>
+
+<option>PhD</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<label>Course</label>
+
+<select>
+
+<option>Select</option>
+
+<option>BCA</option>
+
+<option>B.Sc</option>
+
+<option>B.Com</option>
+
+<option>BA</option>
+
+<option>MCA</option>
+
+<option>M.Sc</option>
+
+<option>M.Com</option>
+
+<option>MA</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="submit">
+<i class="fa-solid fa-paper-plane"></i>
+Submit
+</button>
+
+<button class="reset" type="reset">
+<i class="fa-solid fa-rotate-left"></i>
+Reset
+</button>
+
+</div>
+
+</form>
+
+</div>
+
 </div>
 
 </body>
